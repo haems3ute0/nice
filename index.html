@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lol XD LMAO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: Roboto;
+        }
+        h2{
+            color:  darkred;
+        }
+     h3 {
+        color: skyblue;
+    }
+    h1 {
+        color: pink;
+    }
+    button{
+        color: white
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 19, 2022 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+   // Get today's date and time
+   var now = new Date().getTime();
+
+   // Find the distance between now and the count down date
+   var distance = countDownDate - now;
+
+   // Time calculations for days, hours, minutes and seconds
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   // Display the result in the element with id="demo"
+   document.getElementById("countdown").innerHTML = days + " дней " + hours + " часов "
+   + minutes + " минут " + seconds + " секунд ";
+
+   // If the count down is finished, write some text
+   if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script> 
+    <h1>The Ku Klux Klan</h1>  
+    <h2>прикол будет через: <span id="countdown"></span></h2> 
+    <div><a href="https://youtu.be/AMJaSbmqTts" target="_blank"><button style="background-color: black;">О ПРОЕКТЕ</button></div>
+    <h3>связь с организатором проекта:</h3>
+    <div>discord blyesxxhi#2434</div>
+</body>
+</html>
